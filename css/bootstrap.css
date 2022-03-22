@@ -3043,15 +3043,15 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #0a8585;
   border-color: #096868;
-  box-shadow: 0 0 0 0.25rem rgba(255, 208, 38, 0.5);
+  box-shadow: 0 0 0 0.25rem #096868;
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #096868;
-  border-color: #bf9600;
+  border-color: #096868;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 208, 38, 0.5);
+  box-shadow: 0 0 0 0.25rem #096868;
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;

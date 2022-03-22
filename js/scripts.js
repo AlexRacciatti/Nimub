@@ -50,5 +50,16 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+    
+    document.getElementById('contactForm').addEventListener('submit', event => {
+        event.preventDefault();
+
+        emailjs.sendForm('service_9i33rcg', 'template_ijplm8s', event.target, 'user_XahECptLwZO05hjr0ZwRz')
+            .then((result) => {
+                alert("hola")
+            }, (error) => {
+                alert("chau")
+            });
+    });
 
 });
