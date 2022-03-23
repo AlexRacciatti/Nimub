@@ -54,11 +54,17 @@ window.addEventListener('DOMContentLoaded', event => {
     document.getElementById('contactForm').addEventListener('submit', event => {
         event.preventDefault();
 
+        const BTN = document.getElementById('submitButton');
+
+        BTN.innerHTML= `<div> <div class="btn-loading"></div> </div>`;
+
         emailjs.sendForm('service_9i33rcg', 'template_ijplm8s', event.target, 'user_XahECptLwZO05hjr0ZwRz')
             .then((result) => {
-                alert("hola")
+                BTN.innerHTML= 'Send Message';
+                swal("Enviado!", "Muchas gracias por ponerte en contacto con nosotros. Nos contactaremos a la brevedad para despejar tus dudas.", "success");
             }, (error) => {
-                alert("chau")
+                BTN.innerHTML= 'Send Message';
+                swal("Error!", "Su mail no pudo ser procesado. Por favor, intente más tarde.", "error");
             });
     });
 
